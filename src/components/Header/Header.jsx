@@ -16,8 +16,8 @@ const nav__links = [
     path: "/home",
   },
   {
-    display: "Foods",
-    path: "/pizzas",
+    display: "Fleurs",
+    path: "/Fleurs",
   },
   {
     display: "Cart",
@@ -65,7 +65,7 @@ const Header = () => {
         <div className="nav__wrapper d-flex align-items-center justify-content-between">
           <div className="logo" onClick={() => navigate("/home")}>
             <img src={logo} alt="logo" />
-            <h5>Tasty Treat</h5>
+            <h5>Fleurs d'Ici</h5>
           </div>
           {/* ======= menu ======= */}
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
@@ -99,7 +99,9 @@ const Header = () => {
               <i className="ri-shopping-basket-line"></i>
               <span className="cart__badge">{totalQuantity}</span>
             </span>
-            
+            <span className="user">
+              <Link to=""><i className="ri-user-line"></i></Link>
+            </span>
             <span className="mobile__menu" onClick={toggleMenu}>
               <i className="ri-menu-line"></i>
             </span>

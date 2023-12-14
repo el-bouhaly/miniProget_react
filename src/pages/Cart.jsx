@@ -21,16 +21,22 @@ const Cart = () => {
               {cartItems.length === 0 ? (
                 <h5 className="text-center">Your cart is empty</h5>
               ) : (
-                <>
-                  <h5 className="mb-5">Summary of your order</h5>
-                  <table className="table table-borderless mb-5 align-middle">
-                    <tbody>
-                      {cartItems.map((item) => (
-                        <Tr item={item} key={item.id} />
-                      ))}
-                    </tbody>
-                  </table>
-                </>
+                <table className="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Product Title</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {cartItems.map((item) => (
+                      <Tr item={item} key={item.id} />
+                    ))}
+                  </tbody>
+                </table>
               )}
 
               <div className="mt-4">
@@ -41,7 +47,7 @@ const Cart = () => {
                 <p>Taxes and shipping will calculate at checkout</p>
                 <div className="cart__page-btn">
                   <button className="addTOCart__btn me-4">
-                    <Link to="/pizzas">Continue Shopping</Link>
+                    <Link to="/Fleurs">Continue Shopping</Link>
                   </button>
                   <button className="addTOCart__btn">
                     <Link to="/checkout">Proceed to checkout</Link>
@@ -72,7 +78,7 @@ const Tr = (props) => {
       <td className="text-center">${price}</td>
       <td className="text-center">{quantity}px</td>
       <td className="text-center cart__item-del">
-        <i className="ri-delete-bin-line" onClick={deleteItem}></i>
+        <i class="ri-delete-bin-line" onClick={deleteItem}></i>
       </td>
     </tr>
   );

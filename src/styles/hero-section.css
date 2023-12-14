@@ -8,7 +8,7 @@
 }
 
 .hero__title span {
-  color: #df2020;
+  color: #3620df;
 }
 
 .hero__content p {
@@ -17,53 +17,43 @@
   color: #777;
 }
 
-.order__btn {
+.hero__btns button {
   border: none;
   outline: none;
   padding: 7px 20px;
   border-radius: 5px;
   cursor: pointer;
-  background: #df2020;
-  color: #fff;
   font-weight: 600;
 }
 
+.order__btn {
+  background: #2066df;
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
 .order__btn:hover {
-  background: #212245;
+  background: #353998;
+}
+.all__foods-btn {
+  background: transparent;
+  border: 1px solid #2063df !important;
 }
 
-.order__btn:hover a {
-  color: inherit;
-  text-decoration: none;
+.all__foods-btn a {
+  color: #2030df;
 }
 
-.hero__img {
-  margin: 40px;
+.hero__service p {
+  color: #212245;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .hero__content h5 {
-    font-size: 1rem;
-  }
-
-  .hero__content p {
-    font-size: 0.8rem;
-    line-height: 25px;
-  }
-
-  .hero__title {
-    font-size: 1.5rem;
-    line-height: 40px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .hero__content {
-    text-align: center;
-  }
-
-  .order__btn {
-    display: block;
-    margin: 0 auto;
-  }
+.shipping__icon i {
+  padding: 5px;
+  background: #2023df;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 500 !important;
 }

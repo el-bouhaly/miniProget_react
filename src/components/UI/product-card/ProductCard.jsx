@@ -28,9 +28,9 @@ const ProductCard = (props) => {
   return (
     <div className="product__item d-flex flex-column justify-content-between">
       <div className="product__content">
-        <img className="product__img w-50" src={image01} alt="Pizza" />
+        <img className="product__img w-50" src={image01} alt="Fleur" />
         <h5>
-          <Link to={`/pizzas/${id}`}>{title}</Link>
+          <Link to={`/Fleur/${id}`}>{title}</Link>
         </h5>
       </div>
       <div className="d-flex flex-column align-items-center justify-content-between">

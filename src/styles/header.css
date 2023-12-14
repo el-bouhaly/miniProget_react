@@ -27,6 +27,7 @@
 
 .logo {
   text-align: center;
+  margin-top: -30px;
 }
 
 .logo:hover {
@@ -55,11 +56,18 @@
 }
 
 .menu a:hover {
-  color: #df2020;
+  color: #4920df;
 }
 
 .active__menu {
-  color: #df2020 !important;
+  color: #2036df !important;
+}
+.cart__icon i,
+.user i,
+.mobile__menu i{
+  font-size: 1.3rem;
+  color: #212245;
+  cursor: pointer;
 }
 
 .cart__icon {
@@ -70,7 +78,7 @@
   position: absolute;
   top: 30px;
   right: -10px;
-  background: #df2020;
+  background: #2069df;
   color: #fff;
   width: 15px;
   height: 15px;
